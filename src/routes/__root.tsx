@@ -1,4 +1,4 @@
-import { HeadContent, Outlet, Scripts, createRootRoute } from '@tanstack/react-router'
+import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
 import '../styles.css'
 
 export const Route = createRootRoute({
@@ -8,6 +8,9 @@ export const Route = createRootRoute({
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { title: 'Nawara Projects' },
       { name: 'description', content: 'Cabinet spécialisé dans le développement de franchises et la réalisation de projets immobiliers en Afrique de l\'Ouest.' },
+    ],
+    links: [
+      { rel: 'icon', href: '/Logo1.png' },
     ],
   }),
   shellComponent: RootDocument,
